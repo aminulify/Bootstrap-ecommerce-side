@@ -1,27 +1,24 @@
-.price-color{
-   color: #ff136f;
+.navbar-brand{
+    margin-right: 100px; 
 }
-.button-color{
-   color: #fff;
-   background: #ff136f;
-   border: 0;
-   border-radius: 8px;
+ul .need{
+    margin-right: 80px;
 }
-.resize-button{
-   padding: 10px 0;
+.nav-link{
+    margin-left: 20px;
 }
-.footer-button{
-    padding: 10px 15px;
+input{
+    border-radius: 50px;
 }
-p small{
-   font-size: 1vw;
+.shoe-color{
+    color: #FF136F;
 }
-#category img{
-   width: 100px;
+.btn-md{
+    color: white;
+    background-color: #FF136F;
 }
-.bg-bag-color{
-   background-color: #ff136f;
-}
-.margin-top{
-   margin-top: 57px;
+.hover:hover{
+    background-color: #FF136F;
+    opacity: 50%;
+    transition: 0.3s ease-out;
 }

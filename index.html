@@ -1,264 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Panda Shop</title>
-   <!-- index css file link  -->
-   <link rel="stylesheet" href="index.css">
-   <!-- favicon icon  -->
-   <link rel="icon" href="favicon.JPG">
-   <!-- bootstrap link  -->
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panda E-Commerce</title>
+  <!-- bootstrap css -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<!-- google font  -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet"> 
+<!-- favicon icon  -->
+<link rel="icon" href="favicon.JPG">
+<!-- css  -->
+<link rel="stylesheet" href="index.css">
+<!-- font awesome icon  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-   <!-- header start  -->
 
-   <header id="home">
+<header id="home">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white bg-opacity-75 sticky-top">
+  
+    <div class="container">
+      <a href="#" class="navbar-brand" id="home">
+        <img src="logo.png" alt="Logo Design" width="150px" height="25px">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-   <!-- bootstrap script  -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-<div class="container">
-   <a class="navbar-brand" href="#">
-      <img src="logo.png" alt="" width="159px">
-   </a>
-   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-   </button>
+          <form class="d-flex" action="https://www.google.com/search" method="get">
+            <input class="form-control me-auto my-1 rounded-pill" size="50" placeholder=" Search" aria-label="Search">    
+          </form>
 
-   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-      <li class="nav-item">
-         <a class="nav-link active" aria-current="page" href="#home">Home</a>
-      </li>
-      <li class="nav-item">
-         <a class="nav-link" aria-current="page" href="#category">Category</a>
-      </li>
-      <li class="nav-item">
-         <a class="nav-link" aria-current="page" href="#product">Product</a>
-      </li>
-      <li class="nav-item">
-         <a class="nav-link" aria-current="page" href="#contact">Contact us</a>
-      </li>
-         </ul>
-      </li>
-      </ul>
-   </div>
-</div>
-</nav>
+<li class="need">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#home">Home</a>
+          </li>
 
-<!-- image sliding  -->
-<section class="container margin-top">
-   <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner rounded-3">
-        <div class="carousel-item active">
-         <div class="row p-5 mt-3 d-flex align-items-center " style="background-color: #FEEAE9;" >
-            <div class="col-lg-7">
-               <h1 class="fw-bold">Cool Dude Headphone</h1>
-             <p>This is the best headphone in the world for people who just want to be waste time in front to funky world </p>
-             <h1 class="price-color fw-bold">$420</h1>
-             <button class="button-color p-3 mt-2 fw-bold fs-5">Buy Now</button>
-            </div>
-            <div class="col-lg-5">
-               <img src="banner-images/headphone.png" class="d-block w-100" alt="...">
-            </div>
-         </div>
-        </div>
-        <div class="carousel-item">
-         <div class="row p-5 mt-3 d-flex align-items-center " style="background-color: #FEEAE9;" >
-            <div class="col-lg-7">
-               <h1 class="fw-bold">Mega LCD TV For Sports</h1>
-             <p>This is the best headphone in the world for people who just want to be waste time in front to funky world </p>
-             <h1 class="price-color fw-bold">$1250</h1>
-             <button class="button-color p-3 mt-2 fw-bold fs-5">Buy Now</button>
-            </div>
-            <div class="col-lg-5">
-               <img src="banner-images/tv.png" class="d-block w-100" alt="...">
-            </div>
-         </div>
-        </div>
-      
-        <div class="carousel-item">
-         <div class="row p-5 mt-3 d-flex align-items-center " style="background-color: #FEEAE9;" >
-            <div class="col-lg-7">
-               <h1 class="fw-bold">X-Box for your living room</h1>
-             <p>This is the best headphone in the world for people who just want to be waste time in front to funky world </p>
-             <h1 class="price-color fw-bold">$570</h1>
-             <button class="button-color p-3 mt-2 fw-bold fs-5">Buy Now</button>
-            </div>
-            <div class="col-lg-5">
-               <img src="banner-images/xbox.png" class="d-block w-100" alt="...">
-            </div>
-         </div>
-        </div>
-        </div>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#product" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Products
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#menu">Categories</a></li>
+              <li><a class="dropdown-item" href="#bags">Bags</a></li>
+              <li><a class="dropdown-item" href="#shoes">Shoes</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#about">About Us</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#contact">Contact Us</a>
+          </li>
+          
+        </li>
+      </div>
+    </div>
+  </nav>
+<!-- nav bar finish  -->
+<!-- nav bar finish  -->
+
+ <section>
+  <div id="carouselExampleIndicators" class="carousel slide rounded-3 mb-5" style="background-color:#FEEAE9" data-bs-ride="carousel">
+    <div class="carousel-indicators m-5">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="container">
+    <div class="carousel-inner px-5 py-3">
+      <div class="carousel-item active">
+        <div class="row align-items-center d-flex flex-lg-row flex-sm-column-reverse flex-md-column-reverse flex-column-reverse">
+          <div class="col-12 col-lg-6 col-md-12">
+            <h1 class="fw-bold">Mi LED TV 4A PRO 32</h1>
+            <p>This is the best headphone in the world for people who just want to be waste time in front to funky world </p>
+            <h1 class="fw-bold mb-3" style="color: #FF136F;">$1250</h1>
+            <button class="btn btn-warning btn-lg fw-bold" style="background-color:#FF136F; color:white; border:none;">Buy Now<i class="fa fa-arrow-right ms-2" aria-hidden="true"></i>
+            </button>
+          </div>
+          <div class="col-12 col-lg-6 col-md-12">
+        <img src="banner-images/tv.png" class="d-block w-100" alt="TV Banner Image">
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+      </div>
+      <div class="carousel-item">
+       <div class="row align-items-center d-flex flex-lg-row flex-sm-column-reverse flex-md-column-reverse flex-column-reverse">
+          <div class="col-12 col-lg-6 col-md-12">
+            <h1 class="fw-bold mb-3">Mi LED TV 4A PRO 32</h1>
+            <p>This is the best headphone in the world for people who just want to be waste time in front to funky world </p>
+            <h1 class="fw-bold" style="color: #FF136F;">$1250</h1>
+            <button class="btn btn-warning btn-lg fw-bold" style="background-color:#FF136F; color:white; border:none;">Buy Now<i class="fa fa-arrow-right ms-2" aria-hidden="true"></i></button>
+          </div>
+          <div class="col-12 col-lg-6 col-md-12">
+        <img src="banner-images/xbox.png" class="d-block w-100" alt="TV Banner Image">
+        </div>
+      </div></div>
+      <div class="carousel-item">
+        <div class="row align-items-center d-flex flex-lg-row flex-sm-column-reverse flex-md-column-reverse flex-column-reverse">
+          <div class="col-12 col-lg-6 col-md-12">
+            <h1 class="fw-bold">Mi LED TV 4A PRO 32</h1>
+            <p>This is the best headphone in the world for people who just want to be waste time in front to funky world </p>
+            <h1 class="fw-bold mb-3" style="color:#FF136F;">$1250</h1>
+            <button class="btn btn-warning btn-lg fw-bold" style="background-color: #FF136F; color: white;border: none;">Buy Now<i class="fa fa-arrow-right ms-2" aria-hidden="true"></i></button>
+          </div>
+          <div class="col-12 col-lg-6 col-md-12">
+        <img src="banner-images/headphone.png" class="d-block w-100" alt="TV Banner Image">
+        </div>
+      </div>    
     </div>
-</section>
+   
+  </div>
+</div>
+  </section>
 </header>
-<!-- start main section  -->
+<!-- finish firt section  -->
+<!-- finish firt section  -->
 <main>
-   <section class="container my-5" id="category">
-         <div class="row g-5">
-           <div class="col-lg-4 col-md-6 col-sm-12">
-             <div class="p-3 border d-flex align-items-center justify-content-around rounded-3 bg-warning bg-gradient">
-                <h1 class="text-white">Watch</h1>
-                <img src="categories/watch.png" alt="">
-             </div>
-           </div>
+  <section class="mt-5 container" id="menu">
+    <section class="container my-5" id="category">
+      <div class="row g-5">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="p-3 border d-flex align-items-center justify-content-around rounded-3 bg-warning bg-gradient">
+             <h1 class="text-white fw-bold">Watch</h1>
+             <img src="categories/watch.png" alt="" width="130">
+          </div>
+        </div>
 
-           <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="p-3 border d-flex align-items-center justify-content-around rounded-3 bg-bag-color">
-               <h1 class="text-white">Bag</h1>
-               <img src="categories/bag.png" alt="">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+         <div class="p-3 border d-flex align-items-center justify-content-around rounded-3 bg-danger">
+            <h1 class="text-white fw-bold">Bag</h1>
+            <img src="categories/bag.png" alt=""  width="130">
+         </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+         <div class="p-3 border d-flex align-items-center justify-content-around rounded-3 bg-primary bg-gradient">
+            <h1 class="text-white fw-bold">Shoes</h1>
+            <img src="categories/shoes.png" alt="" width="130">
+         </div>
+        </div>
+       
+      </div>
+  </section>
+
+  <section class="container mb-4" id="bags">
+  <h1 class="fw-bold mb-4">Bags</h1>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4 ">
+    <div class="col">
+      <div class="card h-100 border-0 shadow-sm p-2">
+        <img src="bags/bag-1.png" class="card-img-top bg-light" alt="...">
+        <div class="card-body">
+          <h4 class="card-title fw-bold">Red Laltu Bag</h4>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <h2 class="fw-bold shoe-color">$250</h2>
+          <button class="btn btn-md fw-bold ">Buy Now<i class="fa fa-arrow-right ms-2" aria-hidden="true"></i></button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 border-0 shadow-sm p-2">
+        <img src="bags/bag-2.png" class="card-img-top bg-light" alt="...">
+        <div class="card-body">
+          <h4 class="card-title  fw-bold">Blue Niltu Bag</h4>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <h2 class="fw-bold shoe-color">$199</h2>
+          <button class="btn btn-md fw-bold ">Buy Now<i class="fa fa-arrow-right ms-2" aria-hidden="true"></i></button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 border-0 shadow-sm p-2">
+        <img src="bags/bag-3.png" class="card-img-top bg-light" alt="...">
+        <div class="card-body">
+          <h4 class="card-title fw-bold">Black Kaltu Bag</h4>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          <h2 class="fw-bold shoe-color">$399</h2>
+          <button class="btn btn-md fw-bold ">Buy Now<i class="fa fa-arrow-right ms-2" aria-hidden="true"></i></button>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+
+  <section class="container mb-5" id="shoes">
+    <h1 class="fw-bold mt-5 mb-4">Shoes</h1>
+  
+    <div class="row row-cols-1 row-cols-md-3 g-4 ">
+      <div class="col">
+        <div class="card h-100 border-0 shadow-sm p-2">
+          <img src="shoes/shoe-1.png" class="card-img-top bg-light" alt="...">
+          <div class="card-body">
+            <h4 class="card-title fw-bold">Supply 350</h4>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional.</p>
+            <h2 class="fw-bold shoe-color">$249</h2>
+            <button class="btn btn-md fw-bold ">Buy Now<i class="fa fa-arrow-right ms-2" aria-hidden="true"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 border-0 shadow-sm p-2">
+          <img src="shoes/shoe-2.png" class="card-img-top bg-light" alt="...">
+          <div class="card-body">
+            <h4 class="card-title  fw-bold">Nike Silver 360</h4>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional.</p>
+            <h2 class="fw-bold shoe-color">$299</h2>
+            <button class="btn btn-md fw-bold ">Buy Now<i class="fa fa-arrow-right ms-2" aria-hidden="true"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 border-0 shadow-sm p-2">
+          <img src="shoes/shoe-3.png" class="card-img-top bg-light" alt="...">
+          <div class="card-body">
+            <h4 class="card-title fw-bold">Nike Red 360</h4>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional.</p>
+            <h2 class="fw-bold shoe-color">$299</h2>
+            <button class="btn btn-md fw-bold ">Buy Now<i class="fa fa-arrow-right ms-2" aria-hidden="true"></i></button>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    <!-- about us  -->
+    <!-- about us  -->
+    <section class="container" id="about">
+
+      <h1 class="fw-bold d-flex justify-content-center mb-4">Meet Our Team Members</h1>
+      
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators m-5">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>       
+        </div>
+
+        <div class="container">
+          <div class="carousel-inner px-5 py-3">
+            <div class="carousel-item active">
+              <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col-lg-3 col-md-4 col-12">
+                  <div class="card">
+                    <img src="team/1.jpg" class="card-img-top rounded-3 hover alt="...">
+                    
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-12">
+                  <div class="card">
+                    <img src="team/2.jpg" class="card-img-top rounded-3 hover" alt="...">
+                    
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-12">
+                  <div class="card">
+                    <img src="team/3.jpg" class="card-img-top rounded-3 hover" alt="...">
+                   
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-12">
+                  <div class="card">
+                    <img src="team/4.jpg" class="card-img-top rounded-3 hover" alt="...">
+                   
+                  </div>
+                </div>
+              </div>
+           
             </div>
-           </div>
-
-           <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="p-3 border d-flex align-items-center justify-content-around rounded-3 bg-primary bg-gradient">
-               <h1 class="text-white">Shoes</h1>
-               <img src="categories/shoes.png" alt="">
+            <div class="carousel-item">
+              <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col-lg-3 col-md-4 col-12">
+                  <div class="card">
+                    <img src="team/4.jpg" class="card-img-top rounded-3 hover" alt="...">
+                    
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-12">
+                  <div class="card">
+                    <img src="team/3.jpg" class="card-img-top rounded-3 hover" alt="...">
+                    
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-12">
+                  <div class="card">
+                    <img src="team/2.jpg" class="card-img-top rounded-3 hover" alt="...">
+                   
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-12">
+                  <div class="card">
+                    <img src="team/1.jpg" class="card-img-top rounded-3 hover" alt="...">
+                   
+                  </div>
+                </div>
+              </div>
             </div>
-           </div>
-          
-         </div>
-
-   </section>
-
-   <!-- second secion start  -->
-
-   <section class="container" id="product">
-      <h1 class="mb-3">Shoes</h1>
-      <div class="row row-cols-1 row-cols-md-3 g-4 ">
-         <div class="col-lg-4 col-md-6 col-sm-12">
-           <div class="card border-0 h-100 shadow p-3 mb-5 bg-body rounded">
-             <img src="shoes/shoe-1.png" class="card-img-top" alt="...">
-             <div class="card-body">
-               <h5 class="card-title fw-bold">Supply 350</h5>
-               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional.</p>
-               <h3 class="fw-bold">$120</h3>
-               
-             </div>
-             <div class="card border-0">
-               <button href="#" class="button-color resize-button fw-bold">Buy Now</button>
-             </div>
-           </div>
-         </div>
-
-         <div class="col-lg-4 col-md-6 col-sm-12">
-           <div class="card h-100  border-0 shadow p-3 mb-5 bg-body rounded">
-             <img src="shoes/shoe-2.png" class="card-img-top" alt="...">
-             <div class="card-body">
-               <h5 class="card-title fw-bold">Nike 360</h5>
-               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional.</p>
-               <h3 class="fw-bold">$300</h3>
-               
-             </div>
-             <div class="card border-0 ">
-               <button href="#" class="button-color resize-button fw-bold">Buy Now</button>
-             </div>   </div>
-         </div>
-
-         <div class="col-lg-4 col-md-6 col-sm-12">
-           <div class="card h-100  border-0 shadow p-3 mb-5 bg-body rounded">
-             <img src="shoes/shoe-3.png" class="card-img-top" alt="...">
-             <div class="card-body">
-               <h5 class="card-title fw-bold">Nike 360</h5>
-               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional.</p>
-               <h3 class="fw-bold">$300</h3>
-               
-             </div>
-             <div class="card border-0 ">
-               <button href="#" class="button-color resize-button  fw-bold">Buy Now</button>
-             </div>
-           </div>
-         </div>
-       </div>
-   </section>
-
-   <!-- bag section start  -->
-
-   <section class="container my-5">
-      <h1 class="mb-3">Backpack</h1>
-      <div class="row row-cols-1 row-cols-md-3 g-4 ">
-         <div class="col-lg-4 col-md-6 col-sm-12">
-           <div class="card border-0 h-100 shadow p-3 mb-5 bg-body rounded">
-             <img src="bags/bag-1.png" class="card-img-top" alt="...">
-             <div class="card-body">
-               <h5 class="card-title fw-bold">Red Laltu Bag</h5>
-               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-               <h3 class="fw-bold">$250</h3>
-               
-             </div>
-             <div class="card border-0">
-               <button href="#" class="button-color resize-button fw-bold">Buy Now</button>
-             </div>
-           </div>
-         </div>
-
-         <div class="col-lg-4 col-md-6 col-sm-12">
-           <div class="card h-100  border-0 shadow p-3 mb-5 bg-body rounded">
-             <img src="bags/bag-2.png" class="card-img-top" alt="...">
-             <div class="card-body">
-               <h5 class="card-title fw-bold">Blue Niltu Bag</h5>
-               <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-               <h3 class="fw-bold">$220</h3>
-               
-             </div>
-             <div class="card border-0 ">
-               <button href="#" class="button-color resize-button  fw-bold">Buy Now</button>
-             </div>   </div>
-         </div>
-
-         <div class="col-lg-4 col-md-6 col-sm-12">
-           <div class="card h-100  border-0 shadow p-3 mb-5 bg-body rounded">
-             <img src="bags/bag-3.png" class="card-img-top" alt="...">
-             <div class="card-body">
-               <h5 class="card-title fw-bold">Black Kaltu Bag</h5>
-               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-               <h3 class="fw-bold">$280</h3>
-               
-             </div>
-             <div class="card border-0 ">
-               <button href="#" class="button-color resize-button fw-bold">Buy Now</button>
-             </div>
-           </div>
-         </div>
-       </div>
-   </section>
- 
-   <!-- subscribe section  -->
-
-   <section class="container d-flex align-items-center justify-content-center rounded-3" style="background-color: #FEEAE9; height: 300px;" id="contact">
-      <div class="footer-text">
-      <h2>LET'S STAY IN TOUCH</h2>
-      <p>Get updates on sales, specials and more</p>
-      <input type="email" class="form-control" name="search" placeholder="Your Email" class="border-0 mb-3" id="">
-      <br>
-      <button class="button-color footer-button fw-bold">Submit</button></div>
-
-   </section>
-
+          </div></div>
+      
+      
+    </section>
 </main>
 
 
-<footer class="mt-5">
-   <hr>
- <p class="text-center"><small>©2020. Panda Commerce. All rights reserved. Sofia, Bulgaria.</small></p>
-</footer>
+<!-- javascript bootstrap link  -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-   <!-- Bortstrap javascript link add  -->
-   <!-- JavaScript Bundle with Popper -->
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
